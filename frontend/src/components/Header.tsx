@@ -6,7 +6,7 @@ export default function Header() {
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
-            const scaleValue = Math.max(1 - scrollPosition / 1000, 0.9); // Adjust scaling as per your preference
+            const scaleValue = Math.max(1 - scrollPosition / 1000, 0.9); 
             if (videoRef.current) {
                 videoRef.current.style.transform = `scale(${scaleValue})`;
             }
@@ -20,7 +20,7 @@ export default function Header() {
         <div className="relative w-full h-full overflow-hidden mt-16">
             <video
                 ref={videoRef}
-                src="../../public/bg1.mp4" // Ensure the path is correct relative to your public directory
+                src="/bg1.mp4" 
                 autoPlay
                 loop
                 muted
