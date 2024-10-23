@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [showHeader, setShowHeader] = useState(true);
@@ -64,7 +65,7 @@ export default function Navbar() {
             <li><a>Contact</a></li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">LOGO</a>
+        <Link to="/" className="btn btn-ghost text-xl">LOGO</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -75,8 +76,8 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end gap-3">
-        <a className="btn">Sign In</a>
-        <a className="btn">Sign Up</a>
+        <Link to="/login" className="btn">Sign In</Link>
+        <Link to="/register" className="btn">Sign Up</Link>
       </div>
     </div>
   );

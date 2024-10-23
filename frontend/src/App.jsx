@@ -3,6 +3,7 @@ import Home from "./pages/Home"
 import Login from "./pages/Login"
 import Register from "./pages/Register";
 import Err404 from "./pages/Err404"
+import Dashboard from "./pages/Dashboard";
 
 function App() {
  
@@ -13,8 +14,10 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/dashboard" element={<Dashboard />} />
 
           <Route path="*" element={<Err404 />} />
         </Routes>

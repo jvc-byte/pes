@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 export default function Header() {
-    const videoRef = useRef<HTMLVideoElement>(null);
+    const videoRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
